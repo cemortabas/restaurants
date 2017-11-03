@@ -1,18 +1,16 @@
     <html lang=en>
 
     <head>
+        <title>{% block title %}Restaurant Reviews{% endblock title %}</title>
     </head>
     <body/>
-    <h1>This is a random number game</h1>
+    <a href="../">Home</a> - <a href="../about">About</a> - <a href="../contact">Contact</a>
 
-    <p>This is a {{ html_name }} game</p>
+    <div class="container">
+        {% block content %}
 
-    {% if run %}
-        {% for some_item in some_list %}
-    {{ some_item }} <br>
-         {% endfor %}
-    {% endif %}
-
+        {% endblock %}
+    </div>
 
     <body/>
     </html>
