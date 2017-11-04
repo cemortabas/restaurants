@@ -2,15 +2,21 @@
 
     <head>
         <title>{% block title %}Restaurant Reviews{% endblock title %}</title>
+        {% include "snippets/css.html" %}
+
     </head>
     <body/>
-    <a href="../">Home</a> - <a href="../about">About</a> - <a href="../contact">Contact</a>
+    <div class="container">
+    {% include "snippets/navbar.html" %}
+    </div>
 
     <div class="container">
         {% block content %}
 
         {% endblock %}
     </div>
+
+    {% include "snippets/js.html" %}
 
     <body/>
     </html>
